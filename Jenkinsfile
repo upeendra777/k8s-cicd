@@ -20,13 +20,13 @@ pipeline {
             }
         }
 
-        stage('Install GCloud SDK') {
-            steps {
-                script {
-                    sh 'curl https://sdk.cloud.google.com | bash'
-                }
-            }
-        }
+        // stage('Install GCloud SDK') {
+        //     steps {
+        //         script {
+        //             sh 'curl https://sdk.cloud.google.com | bash'
+        //         }
+        //     }
+        // }
 
         stage('Authenticate with GCP') {
             steps {

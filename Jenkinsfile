@@ -4,9 +4,9 @@ pipeline {
     environment {
         GOOGLE_APPLICATION_CREDENTIALS = credentials('gcp-service-account') // Ensure service account JSON is available
         GKE_CLUSTER_NAME = 'contoso-app-prod' // Update with your GKE cluster name
-        GKE_PROJECT_ID = 'avian-chariot-450105-b7' // Update with your GCP project ID
+        GKE_PROJECT_ID = 'gcp-demo-466705' // Update with your GCP project ID
         GKE_ZONE = 'us-central1-a' // Update with your GKE cluster zone
-        GIT_REPO_URL = 'https://github.com/saleemafroze/k8s-cicd.git' // Update with your Git repository URL
+        GIT_REPO_URL = 'https://github.com/upeendra777/k8s-cicd.git' // Update with your Git repository URL
         GIT_BRANCH = 'main' // Update with your branch name if needed (default is 'main')
     }
 

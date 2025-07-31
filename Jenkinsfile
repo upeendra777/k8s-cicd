@@ -26,7 +26,7 @@ pipeline {
                     // Authenticate with GCP using the service account key
                     sh 'gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}'
                     sh 'gcloud config set project ${GKE_PROJECT_ID}'
-                    sh 'gcloud config set compute/zone ${GKE_ZONE}'
+                    //sh 'gcloud config set compute/zone ${GKE_ZONE}'
                 }
             }
         }

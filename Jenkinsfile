@@ -36,6 +36,7 @@ pipeline {
                 script {
                     // Get credentials for the GKE cluster
                     sh 'gcloud container clusters get-credentials ${GKE_CLUSTER_NAME}'
+                    sh "gcloud container clusters get-credentials contoso-app-prod --region us-central1"
                 }
             }
         }

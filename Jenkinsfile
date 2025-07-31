@@ -36,7 +36,7 @@ pipeline {
                 script {
                     // Get credentials for the GKE cluster
                     //sh 'gcloud container clusters get-credentials ${GKE_CLUSTER_NAME}'
-                    sh 'gcloud container clusters get-credentials ${GKE_CLUSTER_NAME} --region ${GKE_REGION}'
+                    sh "gcloud container clusters get-credentials ${GKE_CLUSTER_NAME} --region ${GKE_REGION}"
                 }
             }
         }
